@@ -137,6 +137,6 @@ nopCommercePOM/
 ## License
 This project is open-source and available under the **"MIT License"**.
 
-    ```
-    Feel free to adjust the content based on your specific project setup!
-    ```
+   ```bash
+   Feel free to adjust the content based on your specific project setup!
+   ```
