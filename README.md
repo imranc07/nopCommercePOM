@@ -101,31 +101,37 @@ To execute tests, use the following commands:
 ## Project Structure
 ```
 nopCommercePOM/
-├── PageObjects/                 # Contains Page Object Models for each page
-│   ├── RegistrationPage.py      # Handles methods and elements of the Registration page
-│   ├── LoginPage.py             # Handles methods and elements of the Login page
-│   ├── ProductPage.py           # Handles methods and elements of the Product page
-│   ├── CartPage.py              # Handles methods and elements of the Cart page
-│   ├── CheckoutPage.py          # Handles methods and elements of the Checkout page
-│   └── LogoutPage.py            # Handles methods and elements of the Logout page
+
+├── Jenkins/                                                                # Contains script running video and console output.
+│   ├── Jenkins Console Output - Freestyle Project - nopCommercePOM #4.txt  # Console Output in Freestyle Project
+│   ├── Jenkins Console Output - Pipeline Project - nopCommercePOM #2.txt   # Console Output in Pipeline Project
+│   └── Script running [Jenkins].mp4                                        # Jenkins script running video for Freestyle and Pipeline Project
+│   
+├── PageObjects/                                                            # Contains Page Object Models for each page
+│   ├── RegistrationPage.py                                                 # Handles methods and elements of the Registration page
+│   ├── LoginPage.py                                                        # Handles methods and elements of the Login page
+│   ├── ProductPage.py                                                      # Handles methods and elements of the Product page
+│   ├── CartPage.py                                                         # Handles methods and elements of the Cart page
+│   ├── CheckoutPage.py                                                     # Handles methods and elements of the Checkout page
+│   └── LogoutPage.py                                                       # Handles methods and elements of the Logout page
 │
-├── TestData/                    # Stores test data for the test cases
-│   └── data.py                  # Contains reusable test data
+├── TestData/                                                               # Stores test data for the test cases
+│   └── data.py                                                             # Contains reusable test data
 │
-├── TestLocators/                # Stores locators for web elements
-│   └── locators.py              # Contains locators for all web elements used in the tests
+├── TestLocators/                                                           # Stores locators for web elements
+│   └── locators.py                                                         # Contains locators for all web elements used in the tests
 │
-├── TestScripts/                 # Contains all test cases
-│   ├── test_RegistrationPage.py # Test cases for Registration page functionality
-│   ├── test_LoginPage.py        # Test cases for Login page functionality
-│   ├── test_ProductPage.py      # Test cases for Product page functionality
-│   ├── test_CartPage.py         # Test cases for Cart page functionality
-│   ├── test_CheckoutPage.py     # Test cases for Checkout page functionality
-│   └── test_LogoutPage.py       # Test cases for Logout page functionality
+├── TestScripts/                                                            # Contains all test cases
+│   ├── test_RegistrationPage.py                                            # Test cases for Registration page functionality
+│   ├── test_LoginPage.py                                                   # Test cases for Login page functionality
+│   ├── test_ProductPage.py                                                 # Test cases for Product page functionality
+│   ├── test_CartPage.py                                                    # Test cases for Cart page functionality
+│   ├── test_CheckoutPage.py                                                # Test cases for Checkout page functionality
+│   └── test_LogoutPage.py                                                  # Test cases for Logout page functionality
 │
-├── requirements.txt             # Lists project dependencies
+├── requirements.txt                                                        # Lists project dependencies
 │
-└── README.md                    # Provides project documentation
+└── README.md                                                               # Project documentation
 ```
 
 ## License
