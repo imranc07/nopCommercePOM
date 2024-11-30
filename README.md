@@ -101,7 +101,6 @@ To execute tests, use the following commands:
 ## Project Structure
 ```
 nopCommercePOM/
-
 ├── Jenkins/                                                                # Contains script running video and console output.
 │   ├── Jenkins Console Output - Freestyle Project - nopCommercePOM #4.txt  # Console Output in Freestyle Project
 │   ├── Jenkins Console Output - Pipeline Project - nopCommercePOM #2.txt   # Console Output in Pipeline Project
