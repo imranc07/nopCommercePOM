@@ -1,0 +1,63 @@
+Started by user Imran Ahmad
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline Project - nopCommercePOM
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Checkout)
+[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline Project - nopCommercePOM\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/imranc07/nopCommercePOM.git # timeout=10
+Fetching upstream changes from https://github.com/imranc07/nopCommercePOM.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.47.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/imranc07/nopCommercePOM.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 2abb0b151c3da8faf5b812cd492546e59f5d4a70 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 2abb0b151c3da8faf5b812cd492546e59f5d4a70 # timeout=10
+Commit message: "Update README.md"
+ > git.exe rev-list --no-walk 2abb0b151c3da8faf5b812cd492546e59f5d4a70 # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline Project - nopCommercePOM\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/imranc07/nopCommercePOM.git # timeout=10
+Fetching upstream changes from https://github.com/imranc07/nopCommercePOM.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.47.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/imranc07/nopCommercePOM.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 2abb0b151c3da8faf5b812cd492546e59f5d4a70 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 2abb0b151c3da8faf5b812cd492546e59f5d4a70 # timeout=10
+ > git.exe branch -a -v --no-abbrev # timeout=10
+ > git.exe branch -D main # timeout=10
+ > git.exe checkout -b main 2abb0b151c3da8faf5b812cd492546e59f5d4a70 # timeout=10
+Commit message: "Update README.md"
+[Pipeline] bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline Project - nopCommercePOM>pytest TestScripts/test_LoginPage.py::test_invalid_email_login 
+============================= test session starts =============================
+platform win32 -- Python 3.13.0, pytest-8.3.3, pluggy-1.5.0
+rootdir: C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline Project - nopCommercePOM
+plugins: anyio-4.6.2.post1, html-4.1.1, metadata-3.1.1
+collected 1 item
+
+TestScripts\test_LoginPage.py .                                          [100%]
+
+============================= 1 passed in 19.47s ==============================
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
